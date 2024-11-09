@@ -27,9 +27,9 @@ def triangle(t, length):
     """
     if len > 10:
       for i in range(3):
-        t.forward(len)
+        t.forward(length)
         t.left(120)
-      return triangle(tr, len/2)    
+      return triangle(tr, length/2)    
 
 
 def nestedTriangle(t, length):
@@ -42,9 +42,9 @@ def nestedTriangle(t, length):
 
      if len > 10:
        for i in range(3): 
-         tr.forward(len)
-         tr.left(120)
-         return nestedTriangle(tr, len/2)       
+         t.forward(length)
+         t.left(120)
+         return nestedTriangle(tr, length/2)       
 
 
 def main():
