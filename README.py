@@ -5,11 +5,9 @@
 
 import turtle
 
-def start(tr, forward_user, color_user):
-  tr = input("Enter a turtle name") 
+def start(tr, forward_user, color_user): 
   tr = turtle.Turtle() 
-  forward_user = int(input("Enter the length that you want the turtle to travel") 
-  color_user = input("Enter a color") 
+  
   tr.penup() 
   tr.forward(forward_user) 
   tr.pendown() 
