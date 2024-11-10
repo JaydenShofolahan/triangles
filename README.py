@@ -8,10 +8,6 @@
 
 import turtle
 def setUp(t, dist, col):
-    """
-    Takes three parameters, a turtle, t, the distance, dist, 
-    to move the turtle and a color, col, to set the turtle's color.
-    """
     t.penup()
     t.forward(dist)
     t.pendown()
@@ -29,7 +25,7 @@ def triangle(t, length):
       for i in range(3):
         t.forward(length)
         t.left(120)
-      return triangle(tr, length/2)    
+    return triangle(tr, length/2)    
 
 
 def nestedTriangle(t, length):
