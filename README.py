@@ -21,7 +21,7 @@ def triangle(t, length):
     it repeats 3 times:  moves forward that length, turns 120 degrees, 
     and calls triangle(t, length/2).
     """
-    if len > 10:
+    if length > 10:
       for i in range(3):
         t.forward(length)
         t.left(120)
@@ -36,7 +36,7 @@ def nestedTriangle(t, length):
     and calls triangle(t, length/2).
     """
 
-     if len > 10:
+     if length > 10:
        for i in range(3): 
          t.forward(length)
          t.left(120)
