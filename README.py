@@ -33,7 +33,7 @@ def nestedTriangle(t, length):
     for i in range(3): 
       t.forward(length)
       t.left(120)
-      return nestedTriangle(t, length/2)       
+    return nestedTriangle(t, length/2)       
      
 
 
