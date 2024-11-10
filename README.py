@@ -25,22 +25,16 @@ def triangle(t, length):
       for i in range(3):
         t.forward(length)
         t.left(120)
-    return triangle(tr, length/2)    
+      return triangle(t, length/2)    
 
 
 def nestedTriangle(t, length):
-    """
-    Takes two parameters: a turtle and a length.
-    The function does the following: if the length is greater than 10,
-    it repeats 3 times:  moves forward that length, turns 120 degrees, 
-    and calls triangle(t, length/2).
-    """
-
-     if length > 10:
-       for i in range(3): 
-         t.forward(length)
-         t.left(120)
-         return nestedTriangle(tr, length/2)       
+  if length > 10:
+    for i in range(3): 
+      t.forward(length)
+      t.left(120)
+      return nestedTriangle(t, length/2)       
+     
 
 
 def main():
